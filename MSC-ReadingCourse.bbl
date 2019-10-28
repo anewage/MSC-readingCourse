@@ -1,0 +1,151 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{anyt/global//global/global}
+  \entry{vonFoerster_2003}{inbook}{}
+    \name{author}{1}{}{%
+      {{hash=vFH}{%
+         prefix={von},
+         prefixi={v\bibinitperiod},
+         family={Foerster},
+         familyi={F\bibinitperiod},
+         given={Heinz},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer New York}%
+    }
+    \strng{namehash}{FHv1}
+    \strng{fullhash}{FHv1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Foe03}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{Understanding Understanding: Essays on Cybernetics and
+  Cognition}
+    \verb{doi}
+    \verb 10.1007/0-387-21722-3_13
+    \endverb
+    \field{isbn}{978-0-387-21722-2}
+    \field{pages}{283\bibrangedash 286}
+    \field{title}{Cybernetics of Cybernetics}
+    \verb{url}
+    \verb https://doi.org/10.1007/0-387-21722-3_13
+    \endverb
+    \list{location}{1}{%
+      {New York, NY}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{morin_1992}{book}{}
+    \name{author}{1}{}{%
+      {{hash=ME}{%
+         family={Morin},
+         familyi={M\bibinitperiod},
+         given={Edgar},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \name{translator}{1}{}{%
+      {{hash=BJLR}{%
+         family={Belanger},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima L.\bibnamedelima Roland},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Peter Lang Pub Inc.}%
+    }
+    \strng{namehash}{ME1}
+    \strng{fullhash}{ME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mor92}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Method: Towards a Study of Humankind}
+    \field{volume}{1: The Nature of Nature}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{1992}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{maturana_varela_1987}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MHR}{%
+         family={Maturana},
+         familyi={M\bibinitperiod},
+         given={Humberto\bibnamedelima R.},
+         giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=VFJ}{%
+         family={Varela},
+         familyi={V\bibinitperiod},
+         given={Francisco\bibnamedelima J.},
+         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Shambhala}%
+    }
+    \strng{namehash}{MHRVFJ1}
+    \strng{fullhash}{MHRVFJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{MV87}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{The Tree of Knowledge: the Biological Roots of Human
+  Understanding}
+    \list{location}{1}{%
+      {Boston}%
+    }
+    \field{year}{1987}
+  \endentry
+
+  \entry{pangaro_web}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PP}{%
+         family={Pangaro},
+         familyi={P\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PP1}
+    \strng{fullhash}{PP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Pan}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Paul Pangaro, PhD}
+    \verb{url}
+    \verb https://www.pangaro.com/
+    \endverb
+    \field{journaltitle}{Paul Pangaro, PhD}
+  \endentry
+\enddatalist
+\endinput
