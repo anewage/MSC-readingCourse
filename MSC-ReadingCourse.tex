@@ -23,6 +23,7 @@
 \definecolor{uwo-gray}{HTML}{807F83}
 
 % Refs
+\usepackage{csquotes}
 \usepackage[backend=bibtex,style=alphabetic]{biblatex}
 \addbibresource{refs.bib}
 
@@ -104,16 +105,9 @@
         		It is impossible to construct a theoretical language that will not \textcolor{teal}{close on itself}, with the result that there are statements that are \textcolor{teal}{undecidable} in that language.} \\
         	\vspace{0.5cm}
         	{Simply put: There are things that you \textcolor{teal}{cannot explain within a paricular language}.}
-        	
         \end{frame}
 
-    \section*{Overview}
-    	\begin{frame}
-		\frametitle{Agenda}
-    		\tableofcontents
-    	\end{frame}
-
-    \section{Introduction}
+    \section{What?}
         \subsection{Initial Notes}
             \begin{frame}{Design}
                 \framesubtitle{Basics}
@@ -182,10 +176,12 @@
         \subsection{First-Order Cybernetics}
             \begin{frame}{Control}
                 \begin{itemize}
-                    \item<1-> Control \neq Restriction
-                    \item<2-> Control = Guide towards better performance
+                    \item<1-> Control $\neq$ Restriction
+                    \item<2-> Control $=$ Guide towards better performance\\
+                    $\equiv$ Enabling for effectiveness\\
+                    $\equiv$ Effective management (Stafford Beer)
                     \begin{itemize}
-                        \item Goal or Intention
+                        \item Goal or intention
                         \item Means of communication of \textcolor{teal}{the intention} and \textcolor{teal}{the action of control} to an actor
                     \end{itemize}
                     \item<3-> What constitutes control in a system that \textcolor{teal}{enables} rather than \textcolor{red}{restricts}?
@@ -238,8 +234,9 @@
                 \end{columns}
             \end{frame}
             \subsubsection{Subjective/Objective}
-                \begin{frame}{Subjective/Objective}
-                    \framesubtitle{Observer Incorporated? \cite{vonFoerster_2003}}
+                \begin{frame}
+                    \frametitle{Subjective/Objective}
+                    \framesubtitle{Observer Incorporated?}
                     \begin{columns}
                         \column{0.7\textwidth}
                             \begin{itemize}
@@ -254,9 +251,7 @@
                             \end{itemize}
                         \column{0.3\textwidth}
                             ``I am a liar'' -- true or false? \\
-                            \begin{figure}
-                				\includegraphics[height=0.5\textheight]{resources/man.png}
-                			\end{figure}
+            				\centering\includegraphics[height=0.5\textheight]{./resources/man.png}\\
                 			``The reality is only my imagination'' (?)
                     \end{columns}
                 \end{frame}
@@ -279,7 +274,7 @@
                                     $\longrightarrow x_4=f(x_3) = {{2.25}\over{2}} + 1 = 2.125$\\
                                     $\longrightarrow x_5=f(x_4) = {{2.125}\over{2}} + 1 = 2.063$\\
                                     $\longrightarrow x_{11}=f(x_{10}) = {{x_{10}}\over{2}} + 1 = 2.001$\\
-                                    $\longrightarrow x_\infty=f(x_\infty) = {{x_\infty}\over{2}} + 1 = \textcolor{red}{2.000}$\\
+                                    $\longrightarrow x_\infty=f(x_\infty) = {{x_\infty}\over{2}} + 1 =$ \textcolor{red}{$2.000$}\\
                                 \column{0.5\textwidth}
                                     $\longrightarrow x_0=1$\\
                                     $\longrightarrow x_1=f(x_0) = {{1}\over{2}} + 1 = 1.5$ \\
@@ -287,9 +282,9 @@
                                     $\longrightarrow x_3=f(x_2) = {{1.75}\over{2}} + 1 = 1.875$\\
                                     $\longrightarrow x_8=f(x_7) = {{x_7}\over{2}} + 1 = 1.996$\\
                                     $\longrightarrow x_{10}=f(x_9) = {{x_9}\over{2}} + 1 = 1.999$\\
-                                    $\longrightarrow x_\infty=f(x_\infty) = {{x_\infty}\over{2}} + 1 = \textcolor{red}{2.000}$\\ 
+                                    $\longrightarrow x_\infty=f(x_\infty) = {{x_\infty}\over{2}} + 1 =$ \textcolor{red}{$2.000$}\\ 
                             \end{columns}
-                        \item<2-> $2$ is the \textcolor{teal}{Eigen value} of $f$
+                        \item<2-> 2 is the \textcolor{teal}{Eigen value} of $f$
                     \end{itemize}
                 \end{frame}
                 \begin{frame}
@@ -315,7 +310,7 @@
                         ``This sentence \textcolor{purple}{`This sentence \textcolor{blue}{<This sentence has THIRTY-ONE letters>} has THIRTY-ONE letters'} has ... letters'' $\implies$ \textcolor{red}{THIRTY-ONE} \\
                         \vspace{0.7cm}
                         \item<2-> ``This sentence consists of ... letters'' $\implies$ THIRTY-NINE \\
-                        ``This sentence is composed of ... letters'' $\implies$ $\nexists$
+                        ``This sentence is composed of ... letters'' $\implies \nexists$
                     \end{itemize}
                 \end{frame}
                 \begin{frame}{Recursion/Repetition}
@@ -323,6 +318,13 @@
                     \begin{figure}
                         \centering\includegraphics[width=0.7\textwidth]{resources/recursion.png}
                     \end{figure}
+                \end{frame}
+                \begin{frame}{Recursion/Repetition}
+                    \framesubtitle{Viable Systems Model (Stafford Beer)}
+                    \begin{columns}
+                        \column{0.5\textwidth} \centering\includegraphics[height=0.8\textheight]{resources/brain_spinalCord.jpg}
+                        \column{0.5\textwidth} \centering\includegraphics[height=0.75\textheight]{resources/VSM.png}
+                    \end{columns}
                 \end{frame}
             \subsubsection{Conversation}
                 \begin{frame}{Conversation Model \cite{pangaro_web}}
@@ -345,6 +347,7 @@
                     \centering\includegraphics<1>[page=99, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
                 \end{frame}
                 \begin{frame}{Mental Models \cite{dubberly2009}}
+                    \framesubtitle{Abductive Reasoning}
                     \centering \includegraphics[width=\textwidth]{resources/models1.PNG}
                 \end{frame}
                 \begin{frame}{Mental Models \cite{dubberly2009}}
@@ -360,16 +363,225 @@
                     \framesubtitle{Agreement}
                     \centering\includegraphics[width=0.5\textwidth]{resources/models5.PNG}
                 \end{frame}
-                \begin{frame}{Why Conversation? \cite{pangaro_web}}
-                    \centering\includegraphics<1>[page=35, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
-                    \centering\includegraphics<2>[page=36, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
-                    \centering\includegraphics<3>[page=37, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
-                \end{frame}
     \section{The Harmony}
-        \
+        \subsection{Determinism}
+            \begin{frame}{Cybernetics, Design, and Determinism}
+            \framesubtitle{Variety and Design: The Undefinable}
+    		    \begin{itemize}
+                    \item<1-> The vast universe is nevertheless \textcolor{red}{finite}\\
+    		        $\implies$ computing capacity \textcolor{red}{always} has a limit (even the most powerful conceivable systems)
+    		        \item<2-> Even simple problems can very rapidly become \textcolor{red}{transcomputable}.\\
+    		            Ex: configurations of lightbulbs on a 20$\times$20 matrix
+    		            Design almost always faces transcomputable problems.
+		            \item<3-> The new: something that is not inherent in the existing \\
+		            $\implies$ not predictable $\equiv$ not dependent on any variable $\equiv$ not emergent \\
+    		        The Undefinable: Impossible to expect to \textcolor{red}{accurately} define a design problem.
+    		    \end{itemize}
+            \end{frame}
+            \begin{frame}{Cybernetics, Design, and Determinism}
+            \framesubtitle{Variety and Design: Definability and Variety}
+    		    \begin{itemize}
+    		        \item<1-> Viable Control = Effective Management = Regulation = Stability = Sustainability = ... \\
+    		        $\implies$ \textcolor{teal}{Requisite Variety} (controll\textcolor{red}{er} $\leqslant$ controll\textcolor{red}{ed})
+    		        \item<2-> Second-Order Cybernetics: Control is emergent (distinctiveness of controlled and controller is arbitrary).\\
+        		        $\longrightarrow$ For second-order systems: stability $\equiv$ the variety can only be \textcolor{teal}{the same}.
+                    \item<3-> Defining a problem = modeling = controlling (without restricting) the performance of a system\\
+                    \item<4-> What if the system (the problem under study) is transcomputable?
+                        \begin{enumerate}
+                            \item<5-> Changing the definitions of the context under which we chose the states (simplifying)
+                            \item<6-> Transforming the notion of control: control-as-restricting
+                        \end{enumerate}
+    		    \end{itemize}
+            \end{frame}
+            \begin{frame}{Cybernetics, Design, and Determinism}
+            \framesubtitle{Variety and Design: Unmanageability and Creativity}
+    		    \begin{itemize}
+    		        \item<1-> Being in control = Defining the range of possible (what will be considered)
+    		        \item<2-> When I am in control $\implies$ I restrict the world to what I can imagine or permit\\
+    		            $\implies$ I support a predetermination of what-is and what-might-be and aim towards predetermined goals.
+		            \item<3-> Ex: Deciding to go to a restaurant:\\
+		                    If I choose (restrict) $\longrightarrow$ reflections of my taste, knowledge and ignorance.\\
+		                    If I let others choose $\longrightarrow$ I can find new experiences.
+                    \item<4-> Benefit of not having enough variety to control the system\\
+                    $\longrightarrow$ Discover \textcolor{teal}{the unexpected} and \textcolor{teal}{the novel}
+                    \item<5-> Not restricting the future considerations to current knowledge: Experiencing the vast unknown
+    		    \end{itemize}
+            \end{frame}
+        \subsection{Design As Done}
+            \begin{frame}{Design As Done}
+            \framesubtitle{Design as a Conversation with self (and others)}
+    		    \begin{itemize}
+    		        \item<1-> We look and then we draw
+    		        \item<1-> We see something new, not previously intended
+    		        \item<2-> Conversation requires switching roles: \textcolor{teal}{pendulum}
+    		        \item<3-> Meanings are private $\implies$ understandings are different: \textcolor{teal}{novelty}
+    		        \item<4-> Agree to agree; or agree to disagree
+    		        \item<4-> Test for understanding: Consistency of what I hear and what I say
+    		        \item<5-> $\longrightarrow$ Increasing the \textcolor{teal}{variety} of the ``repertoire'' of the designer
+    		        \item<6-> Recursion, role switching $\longrightarrow$ understand \textcolor{red}{well enough} to face \textcolor{red}{complexity}
+		            \item<7-> We \textcolor{teal}{construct} our understanding
+    		    \end{itemize}
+            \end{frame}
+            \begin{frame}{Design As Done}
+            \framesubtitle{Conversation, Objects, Eigen forms, and Autonomy}
+    		    \begin{itemize}
+    		        \item<1-> Conversation with self
+    		        \item<2-> Autopoietic systems: Create conditions to create themselves; continue to \textcolor{teal}{reproduce} themselves in the environment
+    		        \item<3-> Eigen forms: a system can operate on its own output, \textcolor{teal}{treating} it as an input.
+    		        \item<4-> Designers: create the conditions in which the design outcome can come into being; continue the design act to reach a constant outcome (details  may be enriched).
+    		        \item<5-> Children: grow to become their own persons
+    		        \item<6-> $\longrightarrow$ \textcolor{red}{Autonomy = Organizational Closure}
+    		    \end{itemize}
+            \end{frame}
+            \begin{frame}{Design As Done}
+            \framesubtitle{Conversation as Design}
+    		    \begin{itemize}
+    		        \item<1-> Design translated once more: \textcolor{red}{Wandering}
+                    \item<2-> Once arrived, we can make sense of the progress. (the ``solution'' defines the ``problem'')
+                    \item<3-> Arriving and stopping? Eigen forms? \textcolor{teal}{Well enough: stable form}.
+                    \item<4-> Stopping and re-starting? 
+                    \item<5-> Pendulum: For a second-order description, observers \textcolor{red}{out} must become observers \textcolor{red}{in}.
+    		    \end{itemize}
+            \end{frame}
+            \begin{frame}{Design As Done}
+            \framesubtitle{Being Out of Control}
+    		    \begin{itemize}
+    		        \item<1-> Not being in control $\implies$ a way of increasing creativity
+                    \item<2-> Restricting responses and conversation to what I know\\
+                        $\implies$ Destroying conversation
+                        $\implies$ Conversation controlled by a participant $\longrightarrow \nexists$
+                    \item<3-> Design is a second-order activity: Ashby's law cannot be utilised.
+                    \item<4-> Stopping and re-starting? 
+                    \item<5-> Pendulum: For a second-order description, observers \textcolor{red}{out} must become observers \textcolor{red}{in}.
+    		    \end{itemize}
+            \end{frame}
+            \begin{frame}{Design As Done}
+            \framesubtitle{Complexity}
+    		    \begin{itemize}
+    		        \item<1-> What if the system (the problem under study) is transcomputable?
+                        \begin{enumerate}
+                            \item Changing the definitions of the context (simplifying)
+                            \item Transforming the notion of control: control-as-restricting
+                        \end{enumerate}
+    		        \item<1-> Designer: someone who faces \textcolor{red}{complexity} (and ambiguity)
+                    \item<2-> ``The systems theorist of the future, I suggest, must be an expert in how to simplify'' \\--- Ross Ashby
+                    \item<3-> ``Progress means simplifying, not complicating'' --- Bruno Munari (Italian Designer)
+                    \item<4-> Simplifying: a process by which complex requirements can be brought together within \textcolor{teal}{one}, \textcolor{teal}{unified}, \textcolor{teal}{unitary} form.
+                    \item<4-> Design brings to complexity an approach that is distinct from complexity science, which can lead to added value.
+    		    \end{itemize}
+            \end{frame}
+        \subsection{Criteria and Conditions}
+            \begin{frame}{From Cybernetics to Design}
+    		    \begin{itemize}
+    		        \item<1-> Design leads not to the best, but to a large variety of different outcomes, giving \textcolor{red}{choice}.
+    		        \item<2-> The nature of design conversation:\\
+    		        For it to operate $\implies \exists$ a listener (viewer)\\
+    		        To listen (see) $\implies \exists$ an open (and receptive) mind, and generosity\\
+    		        To design $\implies$ see the possibilities \textcolor{red}{not already existent} in the mind
+    		        To increase choices through design $\implies$ acting responsibly
+    		        \item<3-> Cybernetic systems work if we accept responsibility, and act generously, with an open mind.
+    		        \item<4-> Conversation is the intersection
+    		    \end{itemize}
+            \end{frame}
+        \subsection{Notes on Epistemology}
+            \begin{frame}{Knowledge Of and Knowledge For}
+    		    \begin{itemize}
+    		        \item<1-> Science \textcolor{red}{through an observer} gives us \textcolor{red}{knowledge of} the system. \\
+    		        Helps us understand \textcolor{red}{what is} $\longrightarrow$ passive and neutral \\
+    		        $\implies$ \textcolor{orange}{Tacit} knowledge
+    		        \item<2-> Designers are actors \textcolor{red}{in} the world $\longrightarrow$ require and generate \textcolor{red}{knowledge for} acting in the world as they make it.\\
+    		        $\implies$ \textcolor{teal}{Reflective} knowledge
+    		        \item<3-> Technology (engineering): converts `knowledge of' into `knowledge for'
+    		    \end{itemize}
+		    \end{frame}
+    \section{Discussion}
+        \begin{frame}{Wicked Problems}
+		    \centering\includegraphics[height=0.8\textheight]{resources/rittle.png}
+        \end{frame}
+        \begin{frame}{Cybernetics and Design: Conversations for Action \cite{Dubberly2019}}
+		    \centering\includegraphics<1>[page=31, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+		    \centering\includegraphics<2>[page=32, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+		    \centering\includegraphics<3>[page=33, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+		    \centering\includegraphics<4>[page=34, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+		    \centering\includegraphics<5>[page=35, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+		    \centering\includegraphics<6>[page=36, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+		    \centering\includegraphics<7>[page=37, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+		    \centering\includegraphics<8>[page=38, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+		    \centering\includegraphics<9>[page=39, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+        \end{frame}
+        \begin{frame}{Interaction \cite{pangaro_web}}
+    		\begin{figure}
+    		    \centering
+    		    \includegraphics<1>[height=0.75\textheight]{resources/interaction.PNG}
+    		    \centering
+    		    \includegraphics<2>[height=0.75\textheight]{resources/conversing1.png}
+    		    \centering
+    		    \includegraphics<3>[height=0.75\textheight]{resources/conversing2.png}
+    		\end{figure}
+        \end{frame}
+        \begin{frame}{Conversations? \cite{pangaro_web}}
+            \centering\includegraphics<1>[page=35, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<2>[page=36, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<3>[page=37, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+        \end{frame}
+        \begin{frame}{\cite{pangaro_web}}
+            \centering\includegraphics<1>[page=41, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<2>[page=42, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<3>[page=44, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<4>[page=89, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<5>[page=90, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+        \end{frame}
+        \begin{frame}{Implications \cite{pangaro_web}}
+            \centering\includegraphics<1>[page=92, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<2>[page=93, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<3>[page=94, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<4>[page=95, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<5>[page=96, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<6>[page=97, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<7>[page=98, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<8>[page=99, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<9>[page=100, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<10>[page=101, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<11>[page=102, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<12>[page=103, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<13>[page=104, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<14>[page=105, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<15>[page=106, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<16>[page=107, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<17>[page=108, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<18>[page=109, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<19>[page=110, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<20>[page=111, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<21>[page=112, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<22>[page=113, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<23>[page=114, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<24>[page=115, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<25>[page=127, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+            \centering\includegraphics<26>[page=128, width=0.75\textwidth]{resources/Pangaro_Vienna-HvF-Lecture_June-2017_distro-r.pdf}
+        \end{frame}
+        \begin{frame}{Design of Ethical Interfaces \cite{pangaro_web}}
+            \centering\includegraphics<1>[page=12, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<2>[page=13, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<3>[page=14, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<4>[page=15, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<5>[page=16, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<6>[page=17, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<7>[page=49, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<8>[page=18, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<9>[page=19, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<10>[page=20, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+            \centering\includegraphics<11>[page=21, width=0.75\textwidth]{resources/Pangaro-HCII_Seminar-April_2019-distro.pdf}
+        \end{frame}
+                
+    \section*{Overview}
+    	\begin{frame}
+		\frametitle{Overview}
+    		\tableofcontents
+    	\end{frame}
+        
 
 
-\section{References}
+\section*{References}
 	\begin{frame}[allowframebreaks]
 		\frametitle{References}
 		\printbibliography
@@ -397,16 +609,21 @@
         \end{figure}
         This model does not scaffold novelty, is pure mechanical, and does not support learning.
     \end{frame}
+    \begin{frame}{Interaction}
+        \framesubtitle{Forming an interaction - Meaning is PRIVATE}
+        \centering\includegraphics[height=0.75\textheight]{resources/interaction1.png}
+    \end{frame}
+    \begin{frame}{Relationship}
+        \framesubtitle{Interactions Flowing in Both Direction + Time + Recursion = TRUST}
+        \centering\includegraphics[height=0.75\textheight]{resources/interaction2.png}
+    \end{frame}
+    \begin{frame}{Conversation}
+        \framesubtitle{``Immaterial'' Aspects}
+        \centering\includegraphics[height=0.75\textheight]{resources/interaction3.png}
+    \end{frame}
     \begin{frame}{Mental Models}
         \framesubtitle{Shaping and re-Shaping}
             \centering\includegraphics<1>[width=0.75\textwidth]{resources/models6.PNG}
             \centering\includegraphics<2>[height=0.77\textheight]{resources/models7.PNG}
-    \end{frame}
-    \begin{frame}{Interaction}
-        \framesubtitle{Configurations \cite{pangaro_web}}
-		\begin{figure}
-		    \centering
-		    \includegraphics[height=0.75\textheight]{resources/interaction.PNG}
-		\end{figure}
     \end{frame}
 \end{document}
